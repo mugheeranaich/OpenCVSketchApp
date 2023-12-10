@@ -1,6 +1,6 @@
 import cv2
 
-image = cv2.imread("2019-07-28_12-01-04_UTC.jpg")
+image = cv2.imread("path to image")
 
 if image is None:
     print("Error")
@@ -16,7 +16,7 @@ else:
 
     sketch = cv2.divide(gray_image,inverted_blur,scale=256.0)
 
-    cv2.imwrite("s.png",sketch)
+    cv2.imwrite("sketch.png",sketch)
 
     cv2.imshow("sketch image",sketch)
 
